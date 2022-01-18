@@ -46,8 +46,8 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav navbar-right">
-								<li><a href="registration.html">Publications</a></li>
-								<li><a href="login.html">Contact US</a></li>
+								<li><a href="#">Publications</a></li>
+								<li><a href="#">Contact US</a></li>
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <span class="caret"></span></a>
 									<ul class="dropdown-menu" role="menu">
@@ -84,87 +84,214 @@
 
 			<!-- blog -->
 			<div class="blog" id="blog">
-				<div class="container">
-					<div class="default-heading">
-						<!-- heading -->
-						<h2>Selected Publications</h2>
-					</div>
-					<div class="row">
-						<div class="col-md-6 col-sm-6">
-							<!-- blog entry -->
-							<div class="entry">
-								<!-- blog entry image -->
-								<img class="img-responsive" src="img/blog/1.jpg" alt="Blog" />
-								<!-- heading / blog post title -->
-								<h3><a href="#">Title of the paper can be put here. Title of the paper can be put here. Title of the paper can be put here. </a></h3>
-								<!-- blog information -->
-								<span class="meta">
-									Aug 15, 2020 | Authors: First Name, Second Name, Third Name. 
-								</span>
-								<!-- paragraph -->
-								<p>Abstract: This section may include the abstract of the paper or some description about the paper. This section may include the abstract of the paper or some description about the paper. This section may include the abstract of the paper or some description about the paper. This section may include the abstract of the paper or some description about the paper.</p>
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-6">
-							<!-- blog entry -->
-							<div class="entry">
-								<!-- blog entry image -->
-								<img class="img-responsive" src="img/blog/2.jpg" alt="Blog" />
-								<!-- heading / blog post title -->
-								<h3><a href="#">Title of the paper can be put here. Title of the paper can be put here. Title of the paper can be put here. </a></h3>
-								<!-- blog information -->
-								<span class="meta">
-									Aug 15, 2020 | Authors: First Name, Second Name, Third Name. 
-								</span>
-								<!-- paragraph -->
-								<p>Abstract: This section may include the abstract of the paper or some description about the paper. This section may include the abstract of the paper or some description about the paper. This section may include the abstract of the paper or some description about the paper. This section may include the abstract of the paper or some description about the paper.</p>
-							</div>
-						</div>
-						
-					</div>
-					<div class="text-center">
-						<a href="#" class="btn btn-default">See More</a>
-					</div>
-				</div>
+                <div class="container">
+                    <div class="default-heading">
+                        <!-- heading -->
+                        <h2>Selected Publications</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <!-- blog entry -->
+                            <div class="entry">
+                                <!-- blog entry image -->
+                                <img class="img-responsive" src="img/MixtureGraph.png" alt="Blog" />
+                                <!-- heading / blog post title -->
+                                <h3><a href="https://ieeexplore.ieee.org/abstract/document/9224646">The Mixture Graph-A Data Structure for Compressing, Rendering, and Querying Segmentation Histograms. </a></h3>
+                                <!-- blog information -->
+                                <span class="meta">
+                                    Oct 15, 2020 | Authors: Khaled Al-Thelaya,  Marco Agus, and Jens Schneider. 
+                                    .
+                                </span>
+                                <!-- paragraph -->
+                                <p>
+                                    Abstract: In this paper, we present a novel data structure, called the Mixture Graph. This data structure allows us to compress,
+                                    render, and query segmentation histograms. Such histograms arise when building a mipmap of a volume containing segmentation
+                                    IDs. Each voxel in the histogram mipmap contains a convex combination (mixture) of segmentation IDs. Each mixture represents the
+                                    distribution of IDs in the respective voxel’s children. Our method factorizes these mixtures into a series of linear interpolations between
+                                    exactly two segmentation IDs. The result is represented as a directed acyclic graph (DAG) whose nodes are topologically ordered.
+                                    Pruning replicate nodes in the tree followed by compression allows us to store the resulting data structure efficiently. During rendering,
+                                    transfer functions are propagated from sources (leafs) through the DAG to allow for efficient, pre-filtered rendering at interactive frame
+                                    rates. Assembly of histogram contributions across the footprint of a given volume allows us to efficiently query partial histograms,
+                                    achieving up to 178 × speed-up over na¨ıve parallelized range queries. Additionally, we apply the Mixture Graph to compute correctly
+                                    pre-filtered volume lighting and to interactively explore segments based on shape, geometry, and orientation using multi-dimensional.
+                                    transfer functions.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <!-- blog entry -->
+                            <div class="entry">
+                                <!-- blog entry image -->
+                                <img class="img-responsive" src="img/InShade.png" alt="Blog" />
+                                <!-- heading / blog post title -->
+                                <h3><a href="https://www.sciencedirect.com/science/article/pii/S0097849321000790">InShaDe: Invariant Shape Descriptors for visual 2D and 3D cellular and nuclear shape analysis and classification. </a></h3>
+                                <!-- blog information -->
+                                <span class="meta">
+                                    Aug, 2021 | Authors: Khaled Al-Thelaya, Marco Agusa Nauman Ullah Gilal, Yin Yang, Giovanni Pintore, Enrico Gobbetti,  Corrado Calí, Pierre J.Magistretti, William Mifsud, Jens Schneider.
+                                </span>
+                                <!-- paragraph -->
+                                <p>
+                                    Abstract: We present a shape processing framework for visual exploration of cellular nuclear envelopes extracted
+                                    from microscopic images arising in histology and neuroscience. The framework is based on a novel shape
+                                    descriptor of closed contours in 2D and 3D. In 2D, it relies on a geodesically uniform resampling of dis-
+                                    crete curves to compute unsigned curvatures at vertices and edges based on discrete differential geome-
+                                    try. Our descriptor is, by design, invariant under translation, rotation, and parameterization. We achieve
+                                    the latter invariance under parameterization shifts by using elliptic Fourier analysis on the resulting cur-
+                                    vature vectors. Uniform scale-invariance is optional and is a result of scaling curvature features to z-
+                                    scores. We further augment the proposed descriptor with feature coefficients obtained through sparse
+                                    coding of the extracted cellular structures using K-sparse autoencoders. For the analysis of 3D shapes,
+                                    we compute mean curvatures based on the Laplace-Beltrami operator on triangular meshes, followed by
+                                    computing a spherical parameterization through mean curvature flow. Finally, we compute the Spheri-
+                                    cal Harmonics decomposition to obtain invariant energy coefficients. Our invariant descriptors provide an
+                                    embedding into a fixed-dimensional feature space that can be used for various applications, e.g., as input
+                                    features for deep and shallow learning techniques or as input for dimension reduction schemes to pro-
+                                    vide a visual reference for clustering shape collections. We demonstrate the capabilities of our framework
+                                    in the context of visual analysis and unsupervised classification of 2D histology images and 3D nuclear
+                                    envelopes extracted from serial section electron microscopy stacks. 
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <!-- blog entry -->
+                            <div class="entry">
+                                <!-- blog entry image -->
+                                <img class="img-responsive" src="img/InShade1.png" alt="Blog" />
+                                <!-- heading / blog post title -->
+                                <h3><a href="https://diglib.eg.org/handle/10.2312/vcbm20201173">
+                                    InShaDe: Invariant Shape Descriptors for visual analysis of
+                                    histology 2D cellular and nuclear shapes. </a></h3>
+                                <!-- blog information -->
+                                <span class="meta">
+                                    Sep 29, 2020 | Authors: Marco Agusa,  Khaled Al-Thelaya, Corrado Cali, Marina M. Boido, Yin Yang, Giovanni Pintore, Enrico Gobbetti, Jens Schneider. 
+                                </span>
+                                <!-- paragraph -->
+                                <p>
+                                    Abstract: We present a shape processing framework for visual exploration of cellular nuclear envelopes extracted from histology images.
+                                    The framework is based on a novel shape descriptor of closed contours relying on a geodesically uniform resampling of discrete 
+                                    curves to allow for discrete differential-geometry-based computation of unsigned curvature at vertices and edges. Our
+                                    descriptor is, by design, invariant under translation, rotation and parameterization. Moreover, it additionally offers the option
+                                    for uniform-scale-invariance. The optional scale-invariance is achieved by scaling features to z-scores, while invariance under
+                                    parameterization shifts is achieved by using elliptic Fourier analysis (EFA) on the resulting curvature vectors. These invariant
+                                    shape descriptors provide an embedding into a fixed-dimensional feature space that can be utilized for various applications:
+                                    (i) as input features for deep and shallow learning techniques; (ii) as input for dimension reduction schemes for providing a
+                                    visual reference for clustering collection of shapes. The capabilities of the proposed framework are demonstrated in the context
+                                    of visual analysis and unsupervised classification of histology images.
+                                    
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <!-- blog entry -->
+                            <div class="entry">
+                                <!-- blog entry image -->
+                                <img class="img-responsive" src="img/SlowDeepFood.png" alt="Blog" />
+                                <!-- heading / blog post title -->
+                                <h3><a href="https://www.researchgate.net/profile/Nauman-Gilal/publication/356326617_SlowDeepFood_a_Food_Computing_Framework_for_Regional_Gastronomy/links/619620a861f0987720acaf0f/SlowDeepFood-a-Food-Computing-Framework-for-Regional-Gastronomy.pdf">
+                                SlowDeepFood: a food computing framework for regional
+                                gastronomy.
+                                </a></h3>
+                                <!-- blog information -->
+                                <span class="meta">
+                                    Oct 29, 2021 | Authors: Nauman Ullah Gilal, Khaled Al-Thelaya, Jens Schneider, James She, Marco Agus.
+                                </span>
+                                <!-- paragraph -->
+                                <p>
+                                    Abstract: Food computing recently emerged as a stand-alone research field, in which artificial intelligence, deep learning, and data
+                                    science methodologies are applied to the various stages of food production pipelines. Food computing may help end-users in
+                                    maintaining healthy and nutritious diets by alerting of high caloric dishes and/or dishes containing allergens. A backbone for
+                                    such applications, and a major challenge, is the automated recognition of food by means of computer vision. It is therefore no
+                                    surprise that researchers have compiled various food data sets and paired them with well-performing deep learning architecture
+                                    to perform said automatic classification. However, local cuisines are tied to specific geographic origins and are woefully
+                                    underrepresented in most existing data sets. This leads to a clear gap when it comes to food computing on regional and
+                                    traditional dishes. While one might argue that standardized data sets of world cuisine cover the majority of applications, such
+                                    a stance would neglect systematic biases in data collection. It would also be at odds with recent initiatives such as SlowFood,
+                                    seeking to support local food traditions and to preserve local contributions to the global variation of food items. To help preserve
+                                    such local influences, we thus present a full end-to-end food computing network that is able to: (i) create custom image data
+                                    sets semi-automatically that represent traditional dishes; (ii) train custom classification models based on the EfficientNet family
+                                    using transfer learning; (iii) deploy the resulting models in mobile applications for real-time inference of food images acquired
+                                    through smart phone cameras. We not only assess the performance of the proposed deep learning architecture on standard food
+                                    data sets (e.g., our model achieves 91.91% accuracy on ETH’s Food-101), but also demonstrate the performance of our models
+                                    on our own, custom data sets comprising local cuisine, such as the Pizza-Styles data set and GCC-30. The former comprises 14
+                                    categories of pizza styles, whereas the latter contains 30 Middle Eastern dishes from the Gulf Cooperation Council members..
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-default">See More</a>
+                    </div>
+                </div>
 			</div>
 			<!-- blog end -->
 			<!-- team -->
 			<div class="subscribe">
 			<div class="team" id="team">
-				<div class="container">
-					<div class="default-heading">
-						<!-- heading -->
-						<h2>People</h2>
-					</div>
-					<div class="row">
-						<div class="col-md-3 col-sm-3">
-							<!-- team member -->
-							<div class="member">
-								<!-- images -->
-								<img class="img-responsive" src="img/team/dr_jens_schneider.jpg" alt="Team Member" />
-								<!-- heading -->
-								<h3>Jens Schneider</h3>
-								<!-- designation -->
-								<span class="dig">Assistant Professor</span>
-								<!-- email -->
-								<a href="#">jeschneider@hbhu.edu.qa</a>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-3">
-							<!-- team member -->
-							<div class="member">
-								<!-- images -->
-								<img class="img-responsive" src="img/team/dr_marco.jpg" alt="Team Member" />
-								<!-- heading -->
-								<h3>Marco Agus</h3>
-								<!-- designation -->
-								<span class="dig">Assistant Professor</span>
-								<!-- email -->
-								<a href="#">magus@hbku.edu.qa</a>
-							</div>
-						</div>
-					</div>
-				</div>
+                <div class="container">
+                    <div class="default-heading">
+                        <!-- heading -->
+                        <h2>People</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3">
+                            <!-- team member -->
+                            <div class="member">
+                                <!-- images -->
+                                <img class="img-responsive" src="img/team/dr_jens_schneider.jpg" alt="Team Member" />
+                                <!-- heading -->
+                                <h3>Jens Schneider</h3>
+                                <!-- designation -->
+                                <span class="dig">Assistant Professor</span>
+                                <!-- email -->
+                                <a href="#">jeschneider@hbhu.edu.qa</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <!-- team member -->
+                            <div class="member">
+                                <!-- images -->
+                                <img class="img-responsive" src="img/team/dr_marco.jpg" alt="Team Member" />
+                                <!-- heading -->
+                                <h3>Marco Agus</h3>
+                                <!-- designation -->
+                                <span class="dig">Assistant Professor</span>
+                                <!-- email -->
+                                <a href="#">magus@hbku.edu.qa</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3">
+                            <!-- team member -->
+                            <div class="member">
+                                <!-- images -->
+                                <img class="img-responsive" src="img/team/Khaled.png" alt="Team Member" />
+                                <!-- heading -->
+                                <h3>Khaled Al-Thelaya</h3>
+                                <!-- designation -->
+                                <span class="dig">Ph.D. Student </span>
+                                <!-- email -->
+                                <a href="#">kalthelaya@hbhu.edu.qa</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <!-- team member -->
+                            <div class="member">
+                                <!-- images -->
+                                <img class="img-responsive" src="img/team/Nauman.png" alt="Team Member" />
+                                <!-- heading -->
+                                <h3>Nauman Ullah Gilal</h3>
+                                <!-- designation -->
+                                <span class="dig">Ph.D. Student</span>
+                                <!-- email -->
+                                <a href="#">giul30541@hbku.edu.qa</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 			</div>
 			</div>
 
@@ -183,9 +310,11 @@
 							<!-- after banner item -->
 							<div class="ab-item">
 								<!-- heading -->
-								<h3>Here includes description of the event.</h3>
+                                <h3> 2ND INTERNATIONAL CONFERENCE ON VISUALIZATION AND COMPUTER-HUMAN INTERACTION.</h3>
 								<!-- paragraph -->
-								<p>Some descritpion about the upcoming events. This part can be used to show recent news about the research group. </p>
+                                <p>VisCHI will bring together experts and users of scientific and data visualization as well as computer-human interaction technologies. 
+                                The conference will highlight research that his been conducted in Qatar  within these specific areas and aims to raise awareness globally and locally. 
+                                The program includes local and international invited speakers, a poster competition, and a hackathon. </p>
 								<br>
 								<a href="#">Read More</a>
 							</div>
@@ -231,9 +360,9 @@
 							<!-- event item -->
 							<div class="event-item">
 								<!-- image -->
-								<img class="img-responsive" src="img/event/1.jpg" alt="Events" />
+								<img class="img-responsive" src="img/Ahadeeth.png" alt="Events" />
 								<!-- heading -->
-								<h4><a href="#">Project Title</a></h4>
+								<h4><a href="#">Ahadeeth Visulaization</a></h4>
 								<!-- sub text -->
 								<span class="sub-text">Project Sponsorship.</span>
 								<!-- paragraph -->
@@ -246,9 +375,9 @@
 							<!-- event item -->
 							<div class="event-item">
 								<!-- image -->
-								<img class="img-responsive" src="img/event/2.jpg" alt="Events" />
+								<img class="img-responsive" src="img/histo.png" alt="Events" />
 								<!-- heading -->
-								<h4><a href="#">Project Title</a></h4>
+								<h4><a href="#">Histopathology Analysis</a></h4>
 								<!-- sub text -->
 								<span class="sub-text">Project Sponsorship.</span>
 								<!-- paragraph -->
@@ -261,9 +390,9 @@
 							<!-- event item -->
 							<div class="event-item">
 								<!-- image -->
-								<img class="img-responsive" src="img/event/3.jpg" alt="Events" />
+								<img class="img-responsive" src="img/Food.png" alt="Events" />
 								<!-- heading -->
-								<h4><a href="#">Project Title</a></h4>
+								<h4><a href="#">Food Classification Framework</a></h4>
 								<!-- sub text -->
 								<span class="sub-text">Project Sponsorship.</span>
 								<!-- paragraph -->
